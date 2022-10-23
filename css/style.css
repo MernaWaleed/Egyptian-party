@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+::-webkit-scrollbar {
+  background-color: #e3d4bd;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #7b382b;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-image: url(../images/angle-down-solid.svg);
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background-image: url(../images/angle-up-solid.svg);
+}
+
+header {
+  background-image: linear-gradient(
+      rgba(136, 90, 90, 0.525),
+      rgba(252, 80, 80, 0.425)
+    ),
+    url(../images/backgroung-1.png);
+  background-position: center 70%;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Kanit", sans-serif;
+}
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 70px;
+  letter-spacing: 2px;
+}
+body {
+  overflow: hidden;
+}
+.topIcon {
+  position: fixed;
+  z-index: 9999999;
+  right: 20px;
+  bottom: 20px;
+  font-size: 25px;
+  display: none;
+  color: #4e2219;
+  cursor: pointer;
+}
+.loading {
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999999;
+  background-color: #141414;
+}
+
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, cyan, #fff);
+  margin: 10px;
+  border-radius: 20px;
+  animation: wave 1s linear infinite;
+}
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.sideBar {
+  position: fixed;
+  z-index: 19999;
+}
+a {
+  text-decoration: none;
+}
+.sideBar .links {
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.sideBar .closeButton {
+  position: absolute;
+  top: 8%;
+  right: 16%;
+  font-size: 20px;
+}
+.sideBar .icon {
+  position: relative;
+  top: 8%;
+  left: 10px;
+  cursor: pointer;
+}
+.closeButton {
+  cursor: pointer;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.one {
+  background-color: #fdfdbd;
+}
+.two {
+  background-color: #b8e8fc;
+}
+.three {
+  background-color: #cfff8d;
+}
+.four {
+  background-color: #e1ceb5;
+}
+.five {
+  background-color: #7d6e83;
+}
+.fonts {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 5px 0px;
+  width: 80%;
+}
+.fonts:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+option {
+  background-color: #333;
+}
+.singer {
+  border-radius: 20px;
+}
+
+.singer div {
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+.singer h2 {
+  font-size: 23px;
+}
+.words {
+  display: none;
+  background-color: #e3d4bd;
+}
+.counter {
+  background-image: linear-gradient(rgb(166 115 115 / 76%) ,rgb(100 54 48)), url(../images/join.jpg);
+  background-position: 50%;
+  background-size: cover;
+}
+
+#duration h4 {
+  width: 10%;
+  text-align: center;
+  background-color: rgba(78 ,34, 25 ,0.7);
+}
+
+#timeOut {
+  background-color: rgba(51, 51, 51, 0.847);
+  width: max-content;
+  display: none;
+}
+.join p {
+  font-size: 17px;
+  line-height: 2;
+  color: rgb(81, 79, 79);
+}
+.icons > div {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+.icons > div:hover {
+  border: none !important;
+}
+.icons > div:hover i {
+  color: #fff;
+}
+.icons .facebook:hover {
+  background-color: #3b5998;
+}
+.icons .google:hover {
+  background-color: #ea4335;
+}
+.icons .twitter:hover {
+  background-color: #1da1f2;
+}
+.icons .github:hover {
+  background-color: #333;
+}
+.icons .behance:hover {
+  background-color: #1769ff;
+}
+.icons .dribble:hover {
+  background-color: #c32361;
+}
+.pink {
+  color: #7b382b;
+}
+.bg-pink {
+  /* background-color: #f2d1d1; */
+  background-color: #4e2219;
+  color: #fff;
+}
+.btn-pink {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #7b382b;
+  --bs-btn-border-color: #7b382b;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #4e2219;
+  --bs-btn-hover-border-color: #4e2219;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+}
+
